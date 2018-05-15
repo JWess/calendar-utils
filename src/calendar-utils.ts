@@ -452,7 +452,7 @@ export function getWeekView({
       startsBeforeWeek: entry.event.start < startOfViewWeek,
       endsAfterWeek: (entry.event.end || entry.event.start) > endOfViewWeek
     }))
-    .sort((itemA, itemB): number => {
+    /* .sort((itemA, itemB): number => {
       const startSecondsDiff: number = differenceInSeconds(
         itemA.event.start,
         itemB.event.start
@@ -464,7 +464,7 @@ export function getWeekView({
         );
       }
       return startSecondsDiff;
-    });
+    }) */;
 
   const eventRows: WeekViewEventRow[] = [];
   const allocatedEvents: WeekViewEvent[] = [];
