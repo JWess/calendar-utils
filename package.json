@@ -18,7 +18,8 @@
     "clean": "rm -rf dist",
     "preversion": "npm test",
     "postversion": "npm run build && git push && npm publish && npm run clean",
-    "codecov": "cat coverage/lcov.info | codecov"
+    "codecov": "cat coverage/lcov.info | codecov",
+    "postinstall": "postinstall-build dist"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -75,5 +76,8 @@
     "typescript": "^2.6.2",
     "webpack": "^3.10.0",
     "webpack-date-fns-externals": "^1.0.2"
+  },
+  "dependencies": {
+    "postinstall-build": "^5.0.1"
   }
 }
