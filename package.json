@@ -18,9 +18,7 @@
     "clean": "rm -rf dist",
     "preversion": "npm test",
     "postversion": "npm run build && git push && npm publish && npm run clean",
-    "codecov": "cat coverage/lcov.info | codecov",
-    "precommit": "lint-staged",
-    "postinstall": "npm run build:esm"
+    "codecov": "cat coverage/lcov.info | codecov"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
