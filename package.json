@@ -19,7 +19,8 @@
     "preversion": "npm test",
     "postversion": "npm run build && git push && npm publish && npm run clean",
     "codecov": "cat coverage/lcov.info | codecov",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "postinstall": "npm run build"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
