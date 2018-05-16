@@ -20,7 +20,7 @@
     "postversion": "npm run build && git push && npm publish && npm run clean",
     "codecov": "cat coverage/lcov.info | codecov",
     "precommit": "lint-staged",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build:esm"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
