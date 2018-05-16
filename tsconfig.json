@@ -7,14 +7,16 @@
     "declaration": true,
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
-    "lib": ["es5", "es2015"]
+    "lib": ["es5", "es2015"],
+    "types": [
+
+    ]
   },
   "include": [
     "src/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist",
-    "@types"
+    "dist"
   ]
 }
